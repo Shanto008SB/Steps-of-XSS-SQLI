@@ -45,6 +45,7 @@ cat param_urls.txt | grep -oP '(?<=[\?&])[a-zA-Z0-9_]+(?==)' | sort -u > params.
 grep -E '\.js($|\?)' urls.txt | sort -u > js_urls.txt
 ```
 ------------------------
+------------------------
 
 ## SQLi Testing Process
 7. Identify SQLi Targets
@@ -61,9 +62,10 @@ Test in parameter file
 sqlmap -m sqli_targets.txt --batch --threads=5
 ```
 ------------------------
+------------------------
 
 ## XSS Testing Process
-9 Identify XSS Targets
+9. Identify XSS Targets
 ```bash
 grep -E "(search|q|s|query|redirect|name|title|msg)" param_urls.txt > xss_targets.txt
 ```
