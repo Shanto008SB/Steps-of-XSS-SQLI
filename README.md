@@ -15,7 +15,7 @@ In the world of security testing, **speed and coverage are everything.** This re
 
 ---
 
-## **Reconnaissance**
+## **✅ Reconnaissance**
 1. subdomain finding
 ```bash
 subfinder -d target.com -o subs.txt
@@ -47,7 +47,7 @@ grep -E '\.js($|\?)' urls.txt | sort -u > js_urls.txt
 ------------------------
 ------------------------
 
-## SQLi Testing Process
+## ✅ SQLi Testing Process
 7. Identify SQLi Targets
 ```bash
 grep -E "(id|user|pid|cid|order|product)" param_urls.txt > sqli_targets.txt
@@ -64,7 +64,7 @@ sqlmap -m sqli_targets.txt --batch --threads=5
 ------------------------
 ------------------------
 
-## XSS Testing Process
+## ✅ XSS Testing Process
 9. Identify XSS Targets
 ```bash
 grep -E "(search|q|s|query|redirect|name|title|msg)" param_urls.txt > xss_targets.txt
