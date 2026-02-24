@@ -78,3 +78,12 @@ Test in parameter file
 ```bash
 dalfox file xss_targets.txt -o xss_results.txt
 ```
+
+# ✅ Extra
+## Move First 10 Lines
+```bash
+head -n 10 file1.txt > file2.txt && sed -i '1,10d' file1.txt
+```
+What happens:
+  1. head -n 10 → copies first 10 lines to file2.txt
+  2. sed -i '1,10d' → deletes lines 1–10 from file1.txt
