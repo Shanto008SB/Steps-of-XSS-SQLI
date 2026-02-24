@@ -38,7 +38,7 @@ paramspider -l live.txt
 ```
 5. Extract Parameter Names
 ```bash
-cat param_urls.txt | grep -oP '(?<=[\?&])[a-zA-Z0-9_]+(?==)' | sort -u > params.txt
+cat param_urls.txt | grep -oP '(?<=[\?&])[a-zA-Z0-9_]+(?==)' | sort -u > params_name.txt
 ```
 6. Extract JS URLs
 ```bash
